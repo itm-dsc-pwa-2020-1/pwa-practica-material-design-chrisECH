@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../Tablas/css/style.css">
+    <link rel="stylesheet" href="../Tablas/mdl/material.min.css">
+    <script src="../Tablas/mdl/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>AE - American Eagle</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="cabecera">
+            <div class="logo">
+                <img src="../Tablas/img/logo.jpg" width="250px" height="250px">
+            </div>
+            <div class="eslogan">
+                <p>Live Your Life</p>
+            </div>
+            <div class="links">
+                <ul>
+                    <form action="#">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                            <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                                <i class="material-icons">search</i>
+                            </label>
+                            <div class="mdl-textfield__expandable-holder">
+                                <input class="mdl-textfield__input" type="text" id="sample6">
+                                <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                            </div>
+                        </div>
+                    </form>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                        Buscar
+                    </button>
+
+
+                    <button id="demo-show-snackbar" class="mdl-button mdl-js-button mdl-button--raised"
+                        type="button">Show Snackbar</button>
+                    <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+                        <div class="mdl-snackbar__text"></div>
+                        <button class="mdl-snackbar__action" type="button"></button>
+                    </div>
+                    <script>
+                        (function () {
+                            'use strict';
+                            var snackbarContainer = document.querySelector('#demo-snackbar-example');
+                            var showSnackbarButton = document.querySelector('#demo-show-snackbar');
+                            var handler = function (event) {
+                                showSnackbarButton.style.backgroundColor = '';
+                            };
+                            showSnackbarButton.addEventListener('click', function () {
+                                'use strict';
+                                showSnackbarButton.style.backgroundColor = '#' +
+                                    Math.floor(Math.random() * 0xFFFFFF).toString(16);
+                                var data = {
+                                    message: 'Button color changed.',
+                                    timeout: 2000,
+                                    actionHandler: handler,
+                                    actionText: 'Undo'
+                                };
+                                snackbarContainer.MaterialSnackbar.showSnackbar(data);
+                            });
+                        }());
+                    </script>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="aside1">
+                <img src="../Tablas/img/img1.jpg" width="570px" height="500px">
+            </div>
+            <div class="aside2">
+                <p>American Eagle Outfitters® (NYSE: AEO) es un minorista especializado líder a nivel mundial que ofrece
+                    ropa, accesorios y productos de cuidado personal de alta calidad a precios asequibles bajo sus
+                    marcas American Eagle® y Aerie®. Somos una empresa inclusiva, optimista y empoderadora que celebra
+                    la individualidad de nuestros clientes y asociados. Nuestro propósito es mostrarle al mundo que
+                    existe un poder REAL en el optimismo de la juventud.</p>
+                <input class="mdl-slider mdl-js-slider" type="range" min="0" max="100" value="25" tabindex="0">
+                    <br>
+                <!-- MDL Progress Bar with Buffering -->
+                <div id="p3" style="width:100%" class="mdl-progress mdl-js-progress"></div>
+                <script>
+                    document.querySelector('#p3').addEventListener('mdl-componentupgraded', function () {
+                        this.MaterialProgress.setProgress(33);
+                        this.MaterialProgress.setBuffer(87);
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div id="p2" style="width: 100%" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+
+
+
+        <div class="pie">
+            <ul>
+                <li> <img src="../Tablas/img/logofb.png" width="30px" height="30px"> <a>Facebook</a> </li>
+                <li> <img src="../Tablas/img/logotw.png" width="30px" height="30px"> <a>Twitter</a> </li>
+                <li> <img src="../Tablas/img/logoig.png" width="30px" height="30px"> <a>Instagram</a> </li>
+                <li> <img src="../Tablas/img/logoyt.png" width="30px" height="30px"> <a>YouTube</a> </li>
+            </ul>
+            <div class="copy">
+                <p>ChristianECH - ITMorelia Av. Tecnologico Morelia, Mich.</p>
+
+            </div>
+
+            <script src="../Tablas/js/mod.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .contenedor{
+        margin: 1%;
+        height: auto;
+        border-style: solid;
+        background-color: darkblue;
+       
+    }
+    
+    .cabecera{
+        height: 300px;
+        width: auto;
+        margin: 2%;
+        border-style: solid;
+        background-color: #04042E;
+        border-radius: 20px;
+        
+    }
+    
+    .logo{
+        width: 250px;
+        height: 250px;
+        border-style: solid;
+        margin: 25px;
+        float: left;
+        background-color: transparent;
+    }
+    
+    .eslogan{
+        width: 580px;
+        border-style: solid;
+        float: left;
+        height: 250px;
+        margin: 25px;
+        background-color: white;
+    }
+    
+    .eslogan > p{
+        margin: 100px;
+        text-align: center;
+        font-family: cursive;
+        font-size: 40px;
+    }
+    
+    .links{
+        width: 250px;
+        height: 250px;
+        margin: 25px;
+        border-style: solid;
+        float: left;
+        background-color: white;
+        text-align: center;
+    }
+
+    
+    
+    
+    
+    .main{
+        margin: 2%;
+        border-style: solid;
+        width: auto;
+        height: 550px;
+        background-color: #04042E;
+        border-radius: 20px;
+    }
+    
+    .aside1{
+        margin: 2%;
+        border-style: solid;
+        width: 570px;
+        height: 500px;
+        float: left;
+        background-color: #5C5C65;
+    }
+    
+    .aside2{
+        margin: 2%;
+        border-style: solid;
+        width: 570px;
+        height: 500px;
+        float: left;
+        background-color: black;
+        text-align: center;
+    }
+
+    .aside2 p{
+        color: white;
+    }
+
+    .pie{
+            border: 1px solid #fff;
+            background-color: rgba(0,0,0,0.8);
+            color: #fff;
+            text-align: center;
+    }
+    
+    .pie ul li{
+        list-style: none;
+        display: inline;
+        padding: 10px 20px;
+        line-height: 40px;
+        float: left;
+        
+    }
+    
+    .pie ul li a{
+        color: black;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .pie > .copy{
+       color: white;
+        float:  right;
+        align-items: center;
+        margin: 20px;
+    }
+
+
+
+
+
